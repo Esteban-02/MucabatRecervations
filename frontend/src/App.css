@@ -1,0 +1,108 @@
+/* Eliminar márgenes y padding globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Eliminar márgenes y padding del body */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Asegurar que la imagen de fondo ocupe toda la pantalla */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imagenes/FondoCafe.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+/* Estilos para el contenedor principal */
+.app-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./imagenes/FondoCafe.jpg'); /* Aquí va la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+/* Contenedor del contenido (logo + formulario) */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    z-index: 1;
+}
+
+/* Estilo del logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+}
+
+/* Estilos del formulario de reserva */
+.reservation-form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reservation-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.reservation-form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reservation-form button:hover {
+    background-color: #ff9900;
+}
